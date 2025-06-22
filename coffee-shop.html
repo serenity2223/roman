@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brew Haven Coffee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fdf6f0;
+      color: #3e2c1c;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') no-repeat center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 0.75rem 1.5rem;
+      background-color: #6f4e37;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu {
+      padding: 3rem 2rem;
+      background-color: #fff3e6;
+      text-align: center;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .item {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      padding: 2rem;
+      background-color: #ffe5cc;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #6f4e37;
+      color: white;
+    }
+
+    @media (min-width: 768px) {
+      .menu-items {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .item {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brew Haven</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Brew Haven</h2>
+    <p>Your cozy escape with every cup.</p>
+    <button onclick="scrollToMenu()">Explore Menu</button>
+  </section>
+
+  <section id="menu" class="menu">
+    <h3>Our Bestsellers</h3>
+    <div class="menu-items">
+      <div class="item">
+        <h4>Caramel Latte</h4>
+        <p>Rich espresso with buttery caramel and steamed milk.</p>
+      </div>
+      <div class="item">
+        <h4>Vanilla Cold Brew</h4>
+        <p>Chilled coffee with sweet vanilla cream.</p>
+      </div>
+      <div class="item">
+        <h4>Classic Espresso</h4>
+        <p>Bold and smooth espresso shot, served hot.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Get in Touch</h3>
+    <p>Email us at <a href="mailto:brewhaven@example.com">brewhaven@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brew Haven Coffee</p>
+  </footer>
+
+  <script>
+    function scrollToMenu() {
+      const menuSection = document.getElementById("menu");
+      menuSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
