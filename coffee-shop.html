@@ -151,6 +151,56 @@
         width: 30%;
       }
     }
+
+    .owners {
+      background-color: #fff8f0;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .owners h3{
+      font-size: 1.8rem;
+      font-family: 'Rowdies', cursive;
+      margin-bottom: 2rem;
+      color: #3e2c1c;
+    }
+
+    .owner-card{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .owner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .owner img{
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .owner p{
+      font-size: 1rem;
+      font-weight: bold;
+      color: #6f4e37;
+    }
+
+    @media (min-width: 768px){
+      .owner img:hover {
+        transform: scale(1.2);
+        border-radius: 10px;
+        object-fit: contain;
+      }
+    }
   </style>
 </head>
 <body>
@@ -163,7 +213,7 @@
   </section>
 
   <section class="hero">
-    <h2>Welcome to Brew Haven</h2>
+    <h2>Welcome to Brew Haven!</h2>
     <p>Your cozy escape with every cup.</p>
     <button onclick="scrollToMenu()">Explore Menu</button>
   </section>
@@ -188,7 +238,16 @@
 
   <section id="contact" class="contact">
     <h3>Get in Touch</h3>
-    <p>Email us at <a href="https://github.com/serenity2223">https://github.com/serenity2223</a></p>
+    <p>Email us at <a href="https://github.com/serenity2223">santosroman969@gmail.com</a></p>
+  </section>
+
+  <section id="owners" class="owners">
+    <h3>Meet the Owners!</h3>
+    <div class ="owner-cards">
+      <div class = "owner">
+        <img src = "LOVERS.jpg" alt="Owners">
+      </div>
+    </div>
   </section>
 
   <footer>
